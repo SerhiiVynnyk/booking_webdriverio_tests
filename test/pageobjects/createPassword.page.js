@@ -13,7 +13,7 @@ class CreatePasswordPage {
   get showNewPassBtn() { return $('[aria-controls="new_password"]') }
 
   async clickCreateAccountButton() {
-    Actions.waitAndClick(this.submitButton);
+    await Actions.waitAndClick(this.submitButton);
   }
 
   async enterTextInFocusedInput(element, text) {
@@ -23,7 +23,7 @@ class CreatePasswordPage {
   }
 
   async clickShowPasswordByLocator(element) {
-    Actions.waitAndClick(element);
+    await Actions.waitAndClick(element);
   }
 
   async checkPasswordToHaveValue(element, text) {

@@ -10,11 +10,11 @@ class SignInPage {
 
   async enterEmailAndClickContinue(email) {
     await this.emailInput.addValue(email);
-    Actions.waitAndClick(this.continueWithEmailButton);
+    await Actions.waitAndClick(this.continueWithEmailButton);
   }
 
   async clicContinueWithEmail() {
-    Actions.waitAndClick(this.continueWithEmailButton);
+    await Actions.waitAndClick(this.continueWithEmailButton);
   }
 }
 
